@@ -2,7 +2,7 @@ import {Component, ComponentFactoryResolver, ViewChild, ViewContainerRef} from "
 import {FRBComponent} from "./b.component";
 
 @Component({
-    moduleId: module.id,
+    
     selector: 'fr-a-component',
     template: 'I am A component that inserts dynamic B component below: <div #vc></div>'
 })

@@ -5,7 +5,7 @@ import {
 import {NMLBComponent} from "./b.component";
 
 @Component({
-    moduleId: module.id,
+    
     selector: 'nml-a-component',
     providers: [
         {
@@ -24,11 +24,11 @@ export class NMLAComponent {
     }
 
     ngAfterViewInit() {
-        this.loader.load('app/ng-module-loader/nml-lazy.module.js#NMLLazyModule').then((factory) => {
-            const module = factory.create(this._injector);
-            const resolver = module.componentFactoryResolver;
-            const cmpFactory = resolver.resolveComponentFactory(NMLBComponent);
-            this._container.createComponent(cmpFactory);
-        });
+    //this.loader.load('./nml-lazy.module#NMLLazyModule').then((factory) => {
+    //      const module = factory.create(this._injector);
+    //      const resolver = module.componentFactoryResolver;
+    //      const cmpFactory = resolver.resolveComponentFactory(NMLBComponent);
+    //      this._container.createComponent(cmpFactory);
+    //  });
     }
 }

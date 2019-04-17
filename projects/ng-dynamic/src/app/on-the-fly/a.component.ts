@@ -1,7 +1,7 @@
 import {Compiler, Component, Injector, NgModule, NgModuleRef, ViewChild, ViewContainerRef} from "@angular/core";
 
 @Component({
-    moduleId: module.id,
+    
     selector: 'otf-a-component',
     template: 'I am A component that inserts dynamic B component below: <div #vc></div>'
 })
